@@ -26,7 +26,7 @@ use App\Http\Controllers\vendor\Chatify\MessagesController; // Replace with your
 
 Route::get('/', function () {
     return redirect('sign-in');
-})->middleware('guest');
+});
 
 Route::get('dashboard', [DashboardController::class, 'index'])->middleware('auth')->name('dashboard');
 

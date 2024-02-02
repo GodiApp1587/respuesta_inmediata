@@ -2,9 +2,9 @@
 
 <div class="container {{ $p }}">
     <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 d-flex flex-column {{ $textColor }}" href="{{ route('dashboard') }}">
-        Material Dashboard 2 PRO
-        <span>Laravel</span>
-    </a>
+        <img src="{{ asset('assets/img/logo-ct.png') }}" alt="Logo" width="100" height="80">
+     </a>
+     
     <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon mt-2">
@@ -773,26 +773,6 @@
                 </div>
             </li>
             @endauth
-            @guest
-            <li class="nav-item">
-                <a class="nav-link mx-auto" href="{{ route('register') }}">
-                    <i class="fas fa-user-circle opacity-6 text-white me-1"></i>
-                    Sign Up
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mx-auto" href="{{ route('login') }}">
-                    <i class="fas fa-key opacity-6 text-white me-1"></i>
-                    Sign In
-                </a>
-            </li>
-            @endguest
-        </ul>
-        <ul class="navbar-nav d-lg-block d-none">
-            <li class="nav-item">
-                <a href="https://www.creative-tim.com/product/material-dashboard-pro-laravel"
-                    class="btn btn-sm  {{ $btn }}  mb-0" target="_blank">Buy Now</a>
-            </li>
         </ul>
     </div>
 </div>

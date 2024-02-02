@@ -17,7 +17,7 @@
                         <div class="card z-index-0 fadeIn3 fadeInBottom">
                             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                                 <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
-                                    <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Sign in</h4>
+                                    <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Iniciar Sesión</h4>
                                     <div class="row mt-3">
                                         <div class="col-2 text-center ms-auto">
                                             <a class="btn btn-link px-3" href="javascript:;">
@@ -38,15 +38,6 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h6>You can login with these 3 user types:</h6>
-                                <ol>
-                                    <li class="text-sm font-weight-normal">Username <strong>admin@material.com</strong> and Password
-                                        <strong>secret</strong></li>
-                                    <li class="text-sm font-weight-normal">Username <strong>creator@material.com</strong> and Password
-                                       <strong>secret</strong></li>
-                                    <li class="text-sm font-weight-normal"> Username <strong>member@material.com</strong> and Password
-                                        <strong>secret</strong></li>
-                                </ol>
                                 <form role="form" method="POST" action="{{ route('login') }}" class="text-start">
                                     @csrf
                                     @if (Session::has('status'))
@@ -60,39 +51,33 @@
                                     @endif
 
                                     <div class="input-group input-group-outline mt-3">
-                                        <label class="form-label">Email</label>
+                                        <label class="form-label">Correo electrónico</label>
                                         <input type="email" class="form-control" name='email'
-                                            value='admin@material.com'>
+                                            value=''>
                                     </div>
                                     @error('email')
                                     <p class='text-danger inputerror'>{{ $message }} </p>
                                     @enderror
 
                                     <div class="input-group input-group-outline mt-3">
-                                        <label class="form-label">Password</label>
-                                        <input type="password" class="form-control" name='password' value='secret'>
+                                        <label class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" name='password' value=''>
                                     </div>
                                     @error('password')
                                     <p class='text-danger inputerror'>{{ $message }} </p>
                                     @enderror
                                     <div class="form-check form-switch d-flex align-items-center my-3">
                                         <input class="form-check-input" type="checkbox" id="rememberMe">
-                                        <label class="form-check-label mb-0 ms-2" for="rememberMe">Remember me</label>
+                                        <label class="form-check-label mb-0 ms-2" for="rememberMe">Guardar mi usuario</label>
                                     </div>
                                     <div class="text-center">
-                                        <button type="submit" class="btn bg-gradient-primary w-100 my-4 mb-2">Sign
-                                            in</button>
+                                        <button type="submit" class="btn bg-gradient-primary w-100 my-4 mb-2">Iniciar Sesión</button>
                                     </div>
-                                    <p class="text-sm text-center mt-3">
-                                        Forgot your password? Reset your password
-                                        <a href="{{ route('verify') }}"
-                                            class="text-primary text-gradient font-weight-bold">here</a>
-                                    </p>
+                                   
                                     <p class="mt-4 text-sm text-center">
-                                        Don't have an account?
+                                        ¿No tienes una cuenta?
                                         <a href="{{ route('register') }}"
-                                            class="text-primary text-gradient font-weight-bold">Sign
-                                            up</a>
+                                            class="text-primary text-gradient font-weight-bold">Crear cuenta</a>
                                     </p>
                                 </form>
                             </div>
