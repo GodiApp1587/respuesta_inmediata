@@ -6,9 +6,8 @@
             © <script>
               document.write(new Date().getFullYear())
             </script>
-              Copyright <i class="fa fa-heart"></i> 
-            <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a> & <a href="https://www.updivision.com" class="font-weight-bold" target="_blank">UPDIVISION</a>
-            for a better web.
+              Copyright
+            <a href="https://www.godimexico.com" class="font-weight-bold" target="_blank">Uriel Garcia</a>  <a href="https://play.google.com/store/apps/details?id=com.godimexico.gomusic" class="font-weight-bold" target="_blank">Google Developer</a>
           </div>
         </div>
       </div>

@@ -30,7 +30,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" href="{{ route('overview') }}">
                                 <span class="sidenav-mini-icon"> MP </span>
-                                <span class="sidenav-normal  ms-3  ps-1"> My Profile </span>
+                                <span class="sidenav-normal  ms-3  ps-1"> Mi Perfil </span>
                             </a>
                         </li>
                         <li class="nav-item">

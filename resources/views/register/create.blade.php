@@ -15,41 +15,34 @@
                     <div class="col-lg-4 col-md-8 mx-auto">
                         <div class="card z-index-0">
                             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                                <div class="bg-gradient-success shadow-success border-radius-lg py-3 pe-1">
-                                    <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Register with</h4>
+                                <div class="bg-gradient-warning shadow-success border-radius-lg py-3 pe-1">
+                                    <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Crear Cuenta</h4>
                                     <div class="row mt-3">
-                                        <div class="col-2 text-center ms-auto">
-                                            <a class="btn btn-link px-3" href="javascript:;">
-                                                <i class="fa fa-facebook text-white text-lg"></i>
-                                            </a>
+                                        <div class="col-12 text-center">
+                                            <p class="motivational-text" style="font-size: 15px; font-weight:400; color: white; text-shadow: 0px 0px 0px #000;">"Siempre hay una oportunidad para marcar la diferencia."</p>
                                         </div>
-                                        <div class="col-2 text-center px-1">
-                                            <a class="btn btn-link px-3" href="javascript:;">
-                                                <i class="fa fa-github text-white text-lg"></i>
-                                            </a>
-                                        </div>
-                                        <div class="col-2 text-center me-auto">
-                                            <a class="btn btn-link px-3" href="javascript:;">
-                                                <i class="fa fa-google text-white text-lg"></i>
-                                            </a>
-                                        </div>
+                                        
+                                        
                                     </div>
                                 </div>
                             </div>
+
                             <div class="row px-xl-5 px-sm-4 px-3">
                                 <div class="mt-2 position-relative text-center">
                                     <p
                                         class="text-sm font-weight-bold mb-2 text-secondary text-border d-inline z-index-2 bg-white px-3">
-                                        or
+                                        Respuesta Inmediata
                                     </p>
                                 </div>
                             </div>
+
+                            
                             <div class="card-body">
                                 <form role="form" method="POST" action="{{ route('register') }}">
                                     @csrf
 
                                     <div class="input-group input-group-dynamic">
-                                        <label class="form-label">Name</label>
+                                        <label class="form-label">Nombre completo</label>
                                         <input type="text" name='name' class="form-control" aria-label="Name" value='{{ old('name') }}'>
                                     </div>
                                     @error('name')
@@ -57,13 +50,13 @@
                                     @enderror
 
                                     <div class="input-group input-group-dynamic mt-3">
-                                        <label class="form-label">Email</label>
+                                        <label class="form-label">Correo electronico @respuestainmediatatlx</label>
                                         <input type="email" name='email' class="form-control" aria-label="Email" value='{{ old('email') }}'>
                                     </div>
                                     @error('email')
                                     <p class='text-danger inputerror'>{{ $message }} </p>
                                     @enderror
-                                    <label for='select-role' class="mt-3">Select Role</label>
+                                    <label for='select-role' class="mt-3">Seleccionar Rol</label>
                                     <div class="input-group input-group-dynamic mb-3">
                                         <select class="form-select p-2" id='select-role' name='role_id'>
                                             <option value="">-</option>
@@ -78,7 +71,7 @@
                                     @enderror
 
                                     <div class="input-group input-group-dynamic mt-3">
-                                        <label class="form-label">Password</label>
+                                        <label class="form-label">Contraseña proporcionada por el Gerente</label>
                                         <input type="password" name='password' class="form-control"
                                             aria-label="Password">
                                     </div>
@@ -89,16 +82,16 @@
                                         <input class="form-check-input bg-dark border-dark" type="checkbox" value=""
                                             id="flexCheckDefault" checked>
                                         <label class="form-check-label" for="flexCheckDefault">
-                                            I agree the <a href="javascript:;"
-                                                class="text-dark font-weight-bolder">Terms and Conditions</a>
+                                            Acepto los <a href="javascript:;"
+                                                class="text-dark font-weight-bolder">Terminos y Condiciones de @Respuesta Inmediata Tlx</a>
                                         </label>
                                     </div>
                                     <div class="text-center">
-                                        <button type="submit" class="btn bg-gradient-dark w-100 my-4 my-2">Sign
-                                            up</button>
+                                        <button type="submit" class="btn bg-gradient-dark w-100 my-4 my-2">Crear
+                                            Cuenta</button>
                                     </div>
-                                    <p class="text-sm mt-3 mb-0">Already have an account?
-                                        <a href="{{ route('login') }}" class="text-dark font-weight-bolder">Sign in
+                                    <p class="text-sm mt-3 mb-0">¿Tienes una cuenta?
+                                        <a href="{{ route('login') }}" class="text-dark font-weight-bolder">Iniciar Sesion
                                         </a></p>
                                 </form>
                             </div>

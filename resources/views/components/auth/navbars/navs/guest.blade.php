@@ -2,7 +2,7 @@
 
 <div class="container {{ $p }}">
     <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 d-flex flex-column {{ $textColor }}" href="{{ route('dashboard') }}">
-        <img src="{{ asset('assets/img/logo-ct.png') }}" alt="Logo" width="100" height="80">
+        <img src="{{ asset('assets/img/logo-ct.png') }}" alt="Logo" width="110" height="80">
      </a>
      
     <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
